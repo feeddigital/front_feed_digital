@@ -69,10 +69,10 @@ export const Product: React.FC = () => {
         //y va a agregar en el objeto como propiedad el id del producto y como valor el preferenceId que 
         //generó el servidor.
         //{1: "sdfsfdf", 2: "dsfsdfdgggg"}
-        ids[prod.id] = preferenceId;
+        // ids[prod.id] = preferenceId;
         console.log('ids', ids);
       }
-      setPreferenceIds(ids);
+      // setPreferenceIds(ids);
     };
 
     if (products.length > 0) {
