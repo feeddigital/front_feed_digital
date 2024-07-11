@@ -24,7 +24,7 @@ export const Product: React.FC = () => {
       //   }
       // );
       // console.log(res)
-      const res = await fetch("https://api-feed-digital-g9he.onrender.com/api/courses");
+      const res = await fetch("https://api-feed-digital2.vercel.app/api/courses");
       const response = await res.json();
       console.log(response.data);
       if (!response.length) setProducts([]);
