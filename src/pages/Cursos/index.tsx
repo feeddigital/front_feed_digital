@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
+import { Button, Container } from "@mui/material";
 
-export const Product: React.FC = () => {
+export const Cursos: React.FC<{}> = () => {
   initMercadoPago("APP_USR-f246badc-7f43-4d1c-b9e2-f9252d1cfa9f", {
     locale: "es-AR",
   });
@@ -71,6 +72,9 @@ export const Product: React.FC = () => {
 
   return (
     <>
+      <Container sx={{ mt: 9 }} maxWidth="xl">
+        <Button variant="contained">Hola</Button>
+      </Container>
       {/* <img src="https://picsum.photos/200/300?random=1" alt="No image" />
       <h3>Producto 1</h3>
       <p>$100</p>
